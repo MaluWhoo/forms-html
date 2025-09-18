@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 2</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Formulários 2</h1>
+        <form action="processa.html" method="get">
+            <h2>Label</h2>
+
+            <!--
+                label -> Legenda para item da interface
+                for ->
+            -->
+
+            <label for="">
+                Nome:
+                <input type="text" name="nome"> <!-- nome - é a chave e o valor é o que foi escrito pelo usuário -->
+
+
+                
+            </label>
+
+            <!-- Forma semantica -->
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+
+            <br>
+
+            <h2>Fazer escolhas</h2>
+
+            <!-- Radio Button -->
+            Gênero<br>
+            <input type="radio" name="genero" value="feminino" id="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" name="genero" value="masculino" id="masculino">
+            <label for="masculino">Masculino</label>
+            <br><br>
+
+            <!-- Caixa de seleção -->
+            Checkbox <br>
+            <input type="checkbox" name="estilo" value="opcao1" id="opcao1">
+            <label for="opcao1">Opção 1</label>
+
+            <input type="checkbox" name="estilo" value="opcao2" id="opcao2">
+            <label for="opcao2">Opção 2</label>
+
+            <input type="checkbox" name="estilo" value="opcao3" id="opcao3">
+            <label for="opcao3">Opção 3</label>
+
+            <input type="checkbox" name="estilo" value="opcao4" id="opcao4">
+            <label for="opcao4">Opção 4</label>
+
+            <br><br>
+
+            Estado:
+            <select name="estados" id="">
+                <option value="">Selecione</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Mato Grosso</option>
+            </select>
+
+            <!-- Upload -->
+            Upload de Arquivo:
+            <input type="file" name="arquivo" id="">
+
+
+            <br><br>
+            <input type="submit" value="cadastrar">
+
+        </form>
+
+
+        <form action="">  
+
+            <h2>Fildset e Legend</h2>
+            <!-- 
+                Fildset -> Conjunto de campos
+                Legend -> legenda para um conjunto de campos
+            -->
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados Adicionais</legend>
+                <!-- Radio Button -->
+                Gênero<br>
+                <input type="radio" name="genero" value="feminino" id="feminino">
+                <label for="feminino">Feminino</label>
+
+                <input type="radio" name="genero" value="masculino" id="masculino">
+                <label for="masculino">Masculino</label>
+                <br><br>
+            </fieldset>
+
+
+        </form>
+    </div>
+</body>
+</html>
