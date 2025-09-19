@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Formulários</title>
+
+    <style>
+
+        
+
+
+        .cadastrarButton {
+            padding: 0.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: bolder;
+        }
+
+        .cadastrarButton:hover {
+            transition: 0.2s;
+            background-color: rgb(161, 161, 161);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Formulários</h1>
+
+    <form action="processa.html">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="">Nome:</label><br>
+            <input type="text"><br>
+            
+            <label for="">Email:<label><br>
+            <input type="text"><br>
+
+            <input type="checkbox">
+            <label for="sim">Quero receber e-mail<label><br><br>
+
+
+            <label for="">Senha:</label><br>
+            <input type="password"><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações adicionais</legend>
+
+            <!-- Radio Button -->
+            <input type="radio" name="adicional" value="Pessoa Física" id="pf">
+            <label for="pf">Pessoa Física</label>
+            
+            <input type="radio" name="adicional" value="Pessoa Jurídica" id="pj">
+            <label for="pj">Pessoa Jurídica</label>
+        </fieldset>
+
+        <input type="submit" value="Cadastrar" class="cadastrarButton">
+    </form>
+</body>
+</html>
