@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executando Video</title>
+    
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Inter", sans-serif;;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0; 
+            border: none;
+        }
+
+        h1 {
+            color: #818181;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Executando Video</h1>
+
+    <!--
+        src (source) -> Fonte
+        controls -> Controles
+        muted -> Mutado
+        autoplay -> Reprodução automática
+        loop 
+        poster -> cartaz = Deixa definir uma miniatura antes de iniciar o vídeo
+    -->
+
+    <video width="320" controls muted autoplay class="video">
+        <source src="video.mp4" type="video/mp4">
+        Seu navagador não suporta a execução desse vídeo.
+    </video>
+</body>
+</html>
